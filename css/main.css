@@ -26,14 +26,14 @@ body {
   }
   
   .image-right {
-    background: url(../images/earbud-x-ray.jpg) no-repeat;
+    background: url(../images/Main_xray\ .jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
   }
   
   .image-left {
-    background: url(../images/earbud.jpg) no-repeat;
+    background: url(../images/Colored_earbuds.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     width: 50%;
