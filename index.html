@@ -1,35 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>X-ray Slider</title>
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-</head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earbuds promotional page</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./scss/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
 <body>
-    <div class="grid-con">
-        <section class="col-span-full">
-            <h2 class="hidden">X-Ray revealer</h2>
-            <!-- <div id="mobile-tablet-view">
-                <img src="images/Main_xray .jpg" alt="x-ray earbud">;
-                <img src="images/Colored_earbuds.jpg" alt="regular view of earbud">;
-            </div> -->
-            <div id="outerShell">
-                <div id="imageCon">
-                    <!-- xray version -->
-                    <div class="slideImage image-right"></div>
-                    <!-- rendered version -->
-                    <div class="slideImage image-left"></div>
-                    <!-- drag bar -->
-                    <div class="slideImage image-drag"></div>
+   
+    <section class="spacer">
+        <h2 class="hidden">Combined classes using media queries</h2>
+        <header id="header" class="grid-con">
+            <div class="col-span-3  l-col-span-2 xl-col-span-3 box">
+                 <img src="./images/logo.png" class="logo">  
+            </div>
+            <nav class="col-start-3 col-end-5 m-col-span-12 l-col-span-10 xl-col-span-9 box">
+                <h2 class="hidden">Main Mobile Nav</h2>
+                <p>
+                    <nav class="navbar">
+                        <div class="hamburger-menu">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="nav-links">
+                        <ul>
+                            <li><a href="#Home">Headphones</a></li>
+                            <li><a href="#AboutUs">Earbuds</a></li>
+                            <li><a href="./index.html">Work</a></li>
+                            <li><a href="./contact.html">contact</a></li>
+                        </ul>
+                            <div>
+                                 <input type="text" id="search-bar" placeholder="Search...">
+                            </div>
+                        </div>
+                    </nav>
+                  
+
+                    
+                    
+                </p>
+            </nav>
+        </header>
+        <main>
+        <nav id="character-nav">
+        <section class="grid-con">
+            <h2 class="hidden">Hero Image</h2>
+            <div class="col-span-4 m-col-span-4 l-col-span-6 xl-col-span-3 box">
+                <img src="./images/earbuds_Mini.webp" alt="earbuds"> 
                 </div>
+            <div class="col-span-4 m-col-span-4 l-col-span-6 xl-col-span-3 box">
+            <div id="earbud-info">
+                <h2>NOVO MINI</h2>
+                <h2>SMALL SIZE. BIG FEATURES.</h2>
+                <i>Compact design meets exceptional performance with NOVO Mini!<i>
+                <i> While small in size these earbuds are big on features and offer<i>
+                <i> immersive sound, seamless connectivity, and effortless control all in one tiny package.<i>
+                    <hr>
+                <p href="#" class="shop-button">Shop Now</p> 
+                <hr>
+            </div>
             </div>
         </section>
-    </div>
-    <script src="js/main.js"></script>
-</body>
+        <section class="grid-con">
+            <h2 class="hidden">Product Section</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                <h2>Trending Products</h2>
+            </div>
+        </section>
+        <section class="grid-con" id="images">
+         
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-6 box" id="black-pop">
+                <img id="model-1" src="./images/GOAirPopTealCover.webp" alt="Black-pop">
+                <div class="Go-air-pop" >
+                <h2>GO AIR POP</h2>
+                <h5>True Wireless Earbuds</h5>
+                <h2>$34.99</h2>
+                </div>
+                <div class="color-palette" >
+                    <div class="color-option" style="background-color: #ff5733;" onclick="changeImage('model-1', '#ff5733')"></div>
+                    <div class="color-option" style="background-color: #0077b6;" onclick="changeImage('model-1', '#0077b6')"></div>
+                    <div class="color-option" style="background-color: #00a3a5;" onclick="changeImage('model-1', '#00a3a5')"></div>
+                    
+                  </div>
+            </div>
 
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-6 box" id="Novo-Mini">
+                <img id="model-2" src="./images/NOVOBuds-Mini-True-Wireless-Earbuds-Pink-Front.webp" alt="Novo-Mini">
+                <div class="Novo-Mini">
+                <h2>Novo Mini</h2>
+                <h5>True Wireless Earbuds</h5>
+                <h2>$59.99</h2>
+                </div>
+                <div class="color-palette" >
+                    <div class="color-option" style="background-color: #33ff4b;" onclick="changeImage('model-2', '#ff5733')"></div>
+                    <div class="color-option" style="background-color: rgb(231, 51, 255);" onclick="changeImage('model-2', '#ff5733')"></div>
+                   
+                    
+                  </div>
+            </div>
+
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box" id="Air-sport-ANC">
+                <img id="model-3" src="./images/Epic_Air_Sport_ANC.webp" alt="Air-sport-ANC">
+                <div class="Epic-air-sport-anc">
+                <h2>Epic Air Sport ANC</h2>
+                <h5>True Wireless Earbuds</h5>
+                <h2>$129.99</h2>
+                
+                </div>
+                <div class="color-palette" >
+                    <div class="color-option" style="background-color: #ff7033;" onclick="changeImage('model-3', '#ff5733')"></div>
+                    <div class="color-option" style="background-color: rgb(255, 0, 183);" onclick="changeImage('model-3', '#ff5733')"></div>
+                   
+                    
+                  </div>
+            </div>
+
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box" id="Air-Sport">
+                <img id="model-4" src="./images/GO_Air_Sport_Green.webp" alt="Air-Sport">
+                <div class="Go-air-sport">
+                <h2>GO Air Sport</h2>
+                <h5>True Wireless Earbuds</h5>
+                <h2>$49.99</h2>
+                </div>
+                <div class="color-palette" >
+                    <div class="color-option" style="background-color: #33ff4b;" onclick="changeImage('model-4', '#ff5733')"></div>
+                    <div class="color-option" style="background-color: rgb(231, 51, 255);" onclick="changeImage('model-4', '#ff5733')"></div>
+                   
+                    
+                  </div>
+
+            </div>
+            </section>
+            <section class="grid-con">
+                <h2 class="hidden">Service Desc</h2>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-3 box">
+                    <div class="fitness">
+                        <img id="fitness" src="./images/fitness.webp">
+                        <div class="Service">
+                            <div class="service-bar">
+                                <h2>fitness</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-3 box">
+                    <div class="Work">
+                        <img id="work" src="./images/work.webp">
+                        <div class="Service">
+                            <div class="service-bar">
+                                <h2>Work</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-6 box">
+                    <div class="kids">
+                        <img id="kids" src="./images/kids-collection.webp">
+                        <div class="Service">
+                            <div class="service-bar">
+                                <h2>kids</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-3 box">
+                    <div class="gaming">
+                        <img id="gaming" src="./images/gaming-collection.webp">
+                        <div class="Service">
+                            <div class="service-bar">
+                                <h2>Gaming</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-3 box">
+                    <div class="focus">
+                        <img id="focus" src="./images/focus.webp">
+                        <div class="Service">
+                            <div class="service-bar">
+                                <h2>Focus</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-6 box">
+                    <div class="best-sellers">
+                        <img id="best-sellers" src="./images/Best-selling.webp">
+                        <div class="Service">
+                            <div class="service-bar">
+                                <h2>Best-sellers</h2>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+         
+            
+            <section class="grid-con">
+                <h2 class="hidden">Team NOVO</h2>     
+            
+
+            <div class="col-span-4 m-col-span-4 l-col-span-6 xl-col-span-6 box" >
+              <div class="our-info">
+                <h2>WE'RE NOVO</h2>
+                <i>Personal tech designed for you, that fits your life, looks cool, and offers</i>
+                <i>surprisingly awesome value. We imagine the products and features you</i>
+                <i>actually want, and we make sure the entire experience of owning them is a</i>
+                <i>great one.</i>
+               
+                <hr>
+
+                <p href="#" class="aboutUs-button">About US</p> 
+            </div>
+
+            <hr>
+
+            </div>
+
+              
+            <div class="col-span-4 m-col-span-4 l-col-span-6 xl-col-span-6 box" >
+                <img id="team-novo" src="./images/earbud-x-ray.jpg" alt="team-novo">
+            </div>
+            
+            
+            </section>
+        </nav>
+        </main>
+         <footer class="grid-con">
+            <h2 class="hidden">You made it to the end</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-7 box">
+                
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="about-me">
+                            <p>"Music in, World out - Discover Our Earbuds Today"</p>
+                        </div>
+                        
+                        <div class="links">
+                            <a href="mailto:my.email@example.com">Email Me</a>
+                            <a href="./assets/Harsh's resume.docx">Guidebook</a>
+                            <a href="https://www.linkedin.com/in/harsh-chaudhary-a39359275/" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/Harssh07/Chaudhary_Harsh_Interactive_Product_Page/tree/main" target="_blank">GitHub</a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="./images/facebook.png" alt="Facebook" />
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <img src="./images/twitter.png" alt="Twitter" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="./images/instagram.png" alt="Instagram" />
+                            </a>
+                        </div>
+                        <p>&copy; 2023 Harsh Chaudhary</p>
+                    </div>
+                    
+                    <button id="toggleTheme">Toggle Theme</button>
+                </div> 
+             </div>
+        </footer>
+    </section> 
+    <script src="./js/main.js"></script>
+</body>
 </html>
