@@ -1,48 +1,539 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+
+}
+
+body{
+  /* background: #080808; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../images/earbud-x-ray.jpg'); 
+  
+  background-size: cover;
+}
+
+#header {
+  
+  
+  background-position: auto;
+  background-size: cover;
+  
+  text-align: center;
+}
+
+#character-nav {
+  text-align: center;
+  
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+
+.container {
+ padding: 10px 10%; 
+  
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap ;
+}
+
+.logo{
+  width: 140px;
+
+}
+
+nav ul li {
+  display:inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ 
+
+ 
+  
+
+li{
+  list-style: none;
+  }
+
+a{
+  color: white;
+  text-decoration: none;
+  }
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: none;
+  padding: 10px 20px;
+  /* color: white; */
+}
+
+.navbar .hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  /* background-color: white; */
+  margin: 3px 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+}
+
+
+
+
+
+.footer-content {
+  min-height: 30vh;
+  padding: 20px;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  /* background-color: orange; */
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.about-me {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
+
+.links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+#toggleTheme {
+  cursor: pointer;
+  padding: 5px 15px;
+  border: none;
+  /* background-color: #444; */
+  color: rgb(255, 221, 0);
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s ease ;
+  margin-top: 10px;
+}
+
+#toggleTheme:hover {
+  background-color: #555;
+}
+
+
+
+
+.nav-links {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links::after{
+  
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 140, 0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-links::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-links a:hover {
+  color: #ff0000;
+}
+
+
+ 
+
+
+.shop-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; 
+}
+
+.shop-button:hover {
+  background-color: #0056b3; 
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+}
+
+#earbud-info {
+  padding: 20px;
+  font-size: 22px;
+  margin-top: 30px;
+  
+}
+
+i {
+  padding : 5px;
+  margin-bottom: 55px;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+
+
+p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.color-palette {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 50%; 
+}
+
+.color-option:hover {
+  border: 2px solid #000;
+}
+
+
+#model-1:hover {
+  
+
+      transform: scale(1.01);
+      transition: 0.2s;
+    }
+
+
+#model-2:hover {
+  
+
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+
+#model-3:hover {
+  
+
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+
+
+#model-4:hover {
+  
+
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+
+
+
+.about {
+  display: flex;
+}     
+   
+.aboutUs-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out; 
   }
   
-  h2, p {
-    margin-bottom: 30px;
+.aboutUs-button:hover {
+      background-color: #0056b3; 
   }
   
-  #outerShell {
-    max-width: 1200px;
-    border: solid 1px #666;
-  }
+.our-info {
+      padding: 20px;
+      /* margin-bottom: 20px; */
+      font-size: 22px;
+      margin-top: 30px;
+      display: block;
+    }
+
+#team-novo {
+  height: auto;
+  width: 600px;
+}      
+
+
+.work {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.work img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-bar {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
   
-  #imageCon {
-    position: relative;
-    max-width: 1200px;
-    height: 100vh;
-  }
   
-  .slideImage {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 100vh;
-  }
+}
+
+.service-bar h2 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.work:hover .service-bar {
+  background-color: #0500a5; 
+  color: rgb(186, 196, 0)55, 255, 255;
+} 
+
+#best-sellers:hover {
   
-  .image-right {
-    background: url(../images/Main_xray\ .jpg) no-repeat;
-    background-size: cover;
-    /* background-position: center center;
-    background-attachment: fixed; */
-  }
+
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+#focus:hover {
   
-  .image-left {
-    background: url(../images/Colored_earbuds.jpg) no-repeat;
-    background-size: cover;
-    /* background-position: center center; */
-    width: 50%;
-    /* background-attachment: fixed; */
-  }
+
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+#gaming:hover {
   
-  .image-drag {
-    background-color: #666;
-    left: 50%;
-    width: 4px;
-    cursor: pointer;
-  }/*# sourceMappingURL=main.css.map */
+
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+#kids:hover {
+  
+
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+#work:hover {
+  
+
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+#fitness:hover {
+  
+
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+
+
+#search-bar {
+  width: 200px;
+  height: 30px;
+  border: 2px solid orange;
+  margin-left: 70%;
+  padding-left: 55px;
+  border-radius: 5px;
+}
+
+/* contact */
+.contact-hero{
+  background-image: url(../images/contact-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 815px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-hero h2 {
+  color: white;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+  
+}
+
+.contact-form {
+  width: auto;
+  margin: 0 auto;
+  /* align-content: center;
+  align-items: center; */
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: auto;
+  align-content: center;
+  align-items: center;
+  
+  
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #04da0f;
+}
+
+
+#spacer {
+  
+  color: aliceblue;
+  text-align: center;
+}
+
+
+
+
