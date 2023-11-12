@@ -130,7 +130,7 @@
     canvas.width = 1900;
     canvas.height = 1060;
 
-    const frameCount = 501;
+    const frameCount = 178;
 
     const images = []; 
     const buds = {
@@ -140,19 +140,20 @@
     for (let i = 0; i < frameCount; i++) {
         const img = document.createElement("img");
         // need to recreate a string: images/explode_0001.webp
-        img.src = `images/EB1_${(i + 1).toString().padStart(4, '0')}.jpg`;
+        img.src = `images/EB1_${(i + 1).toString().padStart(3, '0')}.png`;
         images.push(img);
     }
     
     gsap.to(buds, {
-        frame: 500,
+        frame: 177,
         snap: "frame", // to get full numbers instead of decimals
         scrollTrigger: {
             trigger: "#explode-view",
             pin: true,
-            scrub: 1,
-          start: "top top",
-            end: "bottom 20",
+            scrub: 8,
+            markers: false,
+            start: "top top",
+            end: "+=6000",
             markers: false
         },
         onUpdate: render
