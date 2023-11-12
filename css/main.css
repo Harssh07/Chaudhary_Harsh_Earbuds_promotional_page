@@ -7,13 +7,12 @@
 }
 
 body{
-  /* background: #080808; */
+  
   margin: 0;
   padding: 0;
   font-family: 'Cinzel', serif;
   font-family: 'Montserrat', sans-serif;
-  background-image: url('../images/earbud-x-ray.jpg'); 
-  
+  background-color:#000;
   background-size: cover;
 }
 
@@ -534,7 +533,7 @@ button[type="submit"]:hover {
   text-align: center;
 }
 
-p {
+/* p {
   color: #fff;
   font-size: 34px;
   line-height: 44px;
@@ -542,7 +541,7 @@ p {
 
 body {
   background: #000;
-}
+} */
 
 #explode-view {
   max-width: 100%;
