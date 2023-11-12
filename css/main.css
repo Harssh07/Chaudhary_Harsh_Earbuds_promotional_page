@@ -409,48 +409,8 @@ hr {
   color: rgb(186, 196, 0)55, 255, 255;
 } 
 
-#best-sellers:hover {
-  
 
-  transform: scale(1.02);
-  transition: 0.3s;
-}
-
-#focus:hover {
-  
-
-  transform: scale(1.02);
-  transition: 0.3s;
-}
-
-#gaming:hover {
-  
-
-  transform: scale(1.02);
-  transition: 0.3s;
-}
-
-#kids:hover {
-  
-
-  transform: scale(1.02);
-  transition: 0.3s;
-}
-
-#work:hover {
-  
-
-  transform: scale(1.02);
-  transition: 0.3s;
-}
-
-#fitness:hover {
-  
-
-  transform: scale(1.02);
-  transition: 0.3s;
-}
-
+ #images :hover { opacity: 0.5; color: rgb(215, 16, 166); }
 
 
 #search-bar {
