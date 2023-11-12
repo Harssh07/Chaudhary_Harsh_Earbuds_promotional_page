@@ -87,14 +87,21 @@
     }
 
 
-    
-    const hamburgeramburgerMenu = document.querySelector('.hamburger-menu');
-    const navLinks = document.querySelector('.nav-links');
-    
-    hamburgerMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+ 
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuButton = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
     
+        mobileMenuButton.addEventListener('click', function () {
+            // Toggle the visibility of the navigation menu
+            navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+    
+            // Rotate the hamburger icon bars
+            mobileMenuButton.classList.hamburger('open');
+        });
+    });
+    
+
   
 })();
