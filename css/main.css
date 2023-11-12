@@ -409,8 +409,32 @@ hr {
   color: rgb(186, 196, 0)55, 255, 255;
 } 
 
+.fitness :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
 
- #images :hover { opacity: 0.5; color: rgb(215, 16, 166); }
+.Work :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.kids :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.gaming :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.focus :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.best-sellers :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+
+ 
 
 
 #search-bar {
