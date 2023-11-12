@@ -150,9 +150,9 @@
         scrollTrigger: {
             trigger: "#explode-view",
             pin: true,
-            scrub: 1,
+            scrub: -3,
             start: "top top",
-            end: "+=6000",
+            end: "bottom 5",
             markers: false
         },
         onUpdate: render
