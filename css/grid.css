@@ -78,7 +78,7 @@ img, embed, object, video, picture {
   .col-end-2	{grid-column-end: 2;}
   .col-end-3	{grid-column-end: 3;}
   .col-end-4	{grid-column-end: 4;}
-  .col-end-5	{grid-column-end: 5;}
+  /* .col-end-5	{grid-column-end: 5;} */
   .col-end-auto	{grid-column-end: auto;}
   
   /* ---Tablet Library Grid Styles--- */
