@@ -30,8 +30,8 @@ img, embed, object, video, picture {
   }
   
   .box {
-     /* background-color:rgb(152, 121, 70); */
-     color: rgb(27, 27, 27);
+     /* background-color:rgb(255, 255, 255); */
+     color: rgb(255, 255, 255);
      border-radius: 5px;
      padding: 20px;
      text-align: center;

@@ -140,7 +140,7 @@
     for (let i = 0; i < frameCount; i++) {
         const img = document.createElement("img");
         // need to recreate a string: images/explode_0001.webp
-        img.src = `images/Earbud-frame${(i + 1).toString().padStart(3, '0')}.jpg`;
+        img.src = `images/EB2_${(i + 1).toString().padStart(3, '0')}.jpg`;
         images.push(img);
     }
     
@@ -150,9 +150,9 @@
         scrollTrigger: {
             trigger: "#explode-view",
             pin: true,
-            scrub: -3,
+            scrub: 1,
             start: "top top",
-            end: "bottom 5",
+            end: "bottom 1",
             markers: false
         },
         onUpdate: render

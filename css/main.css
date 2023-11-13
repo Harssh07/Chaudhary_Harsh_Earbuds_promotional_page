@@ -13,7 +13,6 @@ body{
   font-family: 'Cinzel', serif;
   font-family: 'Montserrat', sans-serif;
   background-color:#000;
-  background-size: cover;
   text-decoration: #ccc;
   overflow-x: hidden;
 }
@@ -463,8 +462,8 @@ button[type="submit"]:hover {
 
 #explode-view {
   max-width: 100%;
-  width: 100vw;
-}/*# sourceMappingURL=main.css.map */
+  /* width: 100vw; */
+}
 
 /* x-ray slider */
 #outerShell {
