@@ -166,6 +166,10 @@
     }
 })();
 
+//video player
+
+const player = new Plyr ('video');
+
 
 
   
